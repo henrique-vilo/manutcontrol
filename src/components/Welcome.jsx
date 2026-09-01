@@ -29,7 +29,7 @@ export default function Welcome(){
                 </div>
 
                 <button type="button" className="bg-blue-500 w-60 h-12 p-2 flex justify-center items-center gap-3 rounded-xl md:me-50">
-                <img src="/notificacao.svg" alt="" />
+                <img src="/add.svg" alt="" />
                 <p className="text-white text-l">Nova Ordem</p>
                 </button>
 
@@ -40,7 +40,7 @@ export default function Welcome(){
 
                 <div className="bg-gray-100 w-90 h-auto flex  justify-start items-center rounded-1xl p-8 mt-8 gap-4">
                 
-                    <img src="/notificacao.svg" alt=""  className="size-8"/>
+                    <img src="/list.svg" alt=""  className="size-8"/>
                     <p className="text-black text-xl font-bold">{ordensAbertas.length}</p>
                     <p className="text-black text-l">ordens abertas</p>
 
@@ -48,7 +48,7 @@ export default function Welcome(){
 
                 <div className="bg-gray-100 w-90 h-auto flex  justify-start items-center rounded-1xl p-8 mt-8 gap-4">
                 
-                    <img src="/notificacao.svg" alt=""  className="size-8"/>
+                    <img src="/clock.svg" alt=""  className="size-8"/>
                     <p className="text-black text-xl font-bold">{ordensVencidas.length}</p>
                     <p className="text-black text-l">vencidas</p>
 
@@ -56,7 +56,7 @@ export default function Welcome(){
 
                     <div className="bg-gray-100 w-90 h-auto flex  justify-start items-center rounded-1xl p-8 mt-8 gap-4">
                     
-                    <img src="/notificacao.svg" alt=""  className="size-8"/>
+                    <img src="/pausa.svg" alt=""  className="size-8"/>
                     <p className="text-black text-xl font-bold">{equipamentosParados.length}</p>
                     <p className="text-black text-l">equipamentos parados</p>
 
