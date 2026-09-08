@@ -3,18 +3,14 @@ import dados from "@/manutcontrol_dados.json";
 export default function Welcome(){
     const ordens = dados.ordensServico;
 
-    const ordensAbertas = ordens.filter(function(ordem){
-        return ordem.status = "aberta";
-    });
+    const ordensAbertas = ordens.map((ordem) => ordem.status == "aberta")
 
-    const ordensVencidas = ordens.filter(function(ordem){
-        return ordem.status = "vencida";
-    })
+    const ordensVencidas = ordens.map((ordem) => ordem.status == "vencida")
 
 
     const equipamentos = dados.equipamentos;
 
-    const equipamentosParados = equipamentos.filter(function(equipamento){
+    const equipamentosParados = equipamentos.map(function(equipamento){
         return equipamento.status = "parado";
     })
 

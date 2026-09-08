@@ -1,13 +1,13 @@
 {
   "empresa": "Indústria Atlas",
-  "usuario": "Henrique Lopes",
+  "usuario": "Raphael Almeida",
   "equipamentos": [
     {
       "id": 1,
       "codigo": "MTR-020",
       "nome": "Motor 20 CV - Bomba de Recalque 2",
       "setor": "Bombas",
-      "status": " ",
+      "status": "atencao",
       "ultimaManutencao": "2026-08-02",
       "criticidade": "alta"
     },

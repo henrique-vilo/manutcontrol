@@ -3,6 +3,7 @@
 import Image from "next/image";
 import dados from "@/manutcontrol_dados.json";
 import Welcome from "@/components/Welcome";
+import Tabela from "@/components/Tabela";
 
 export default function Home() {
 
@@ -21,23 +22,8 @@ export default function Home() {
 
             <div className="bg-gray-100 w-230 min-h-100 flex flex-col p-2">
             
-              <div className="w-full h-1/8 flex flex-col lg:flex-row p-3">
-
-                <p className="text-black font-bold">Ordens que Exigem Atenção</p>
-
-              </div>
-              <div className="w-full h-1/8 flex justify-center items-center">
-
-                <div className="w-1/3 h-auto flex">
-                  <form action="/pesquisa" method="get" className="flex">
-                    <img src="/notificacao.svg" alt=""/>
-                    <input type="search" name="pesquisa" className="focus:outline-none" placeholder="Buscar ordens, equipamentos, serviços..." />
-                  </form>
-                </div>
-                <div className=""></div>
-                <div className=""></div>
-
-              </div>
+              
+              <Tabela/>
               <div className=""></div>
               <div className=""></div>
           
